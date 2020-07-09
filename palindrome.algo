@@ -1,0 +1,19 @@
+  FUNCTION is_palindrome(str[]: STRING ) : STRING;
+  var
+  s : INTEGER ;
+  e: INTEGER;
+
+   BEGIN
+   
+    if (s == e) THEN
+  RETURN true;
+
+  ELSE (str[s] != str[e]) 
+    RETURN false; 
+  END If
+
+    if (s < e + 1) 
+    RETURN is_palindrome(str, s + 1, e - 1); 
+  
+    RETURN true; 
+END
